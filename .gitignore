@@ -1,0 +1,7 @@
+# Ignore everything
+/*
+
+# except
+!.gitignore
+!create_project.sh
+!_Skeleton/
