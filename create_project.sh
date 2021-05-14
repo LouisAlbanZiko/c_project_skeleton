@@ -44,7 +44,7 @@ else
 	
 	replace_variables_in_files()
 	{
-		for file in $1/*; do
+		for file in $Project_Name/*; do
 			if [ -f $file ]; then
 				sed -i "s/\${Project_Kind}/$Project_Kind/g" $file
 				sed -i "s/\${Project_Name_Exe}/$Project_Name_Exe/g" $file
