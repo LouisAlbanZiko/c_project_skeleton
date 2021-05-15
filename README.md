@@ -4,7 +4,8 @@ A project Skeleton with a script to create a ConsoleApp or StaticLib for the c p
 
 ## Setup
 Clone the repository to where you will create projects.
-Go to https://premake.github.io/download and download the latest release of premake. Note that the script currently only works on linux.
+[Download](https://premake.github.io/download) the latest release of premake. Note that the script currently only has a working version for linux but the project files work on windows
+with Visual Studio solution files.
 Create a new folder named `_premake` next to `_Skeleton` and put the premake executable inside the folder.
 Make sure the executable is named `premake5` or change the command at row 2 of `_Skeleton/build.sh`.
 
