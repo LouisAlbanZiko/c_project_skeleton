@@ -12,7 +12,7 @@ else
 	mkdir -p "${Project_Name}/_bin"
 	mkdir -p "${Project_Name}/_bin_obj"
 	mkdir -p "${Project_Name}/_vendor"
-	mkdir -p "${Project_Name}/src"
+	mkdir -p "${Project_Name}/${Project_Name}"
 	
 	cp _Skeleton/build.sh $Project_Name/build.sh
 	cp _Skeleton/test.sh $Project_Name/test.sh
@@ -22,21 +22,21 @@ else
 		Project_Name_Exe=Sandbox
 		Project_Path_Exe=$Project_Name_Exe
 		Project_Name_Lib=$Project_Name
-		Project_Path_Lib=src
+		Project_Path_Lib=$Project_Name
 
 		mkdir -p "${Project_Name}/${Project_Name_Exe}"
 
-		cp _Skeleton/src/lib.c $Project_Name/src/lib.c
-		cp _Skeleton/src/lib.h $Project_Name/src/lib.h
+		cp _Skeleton/src/lib.c $Project_Name/$Project_Name/lib.c
+		cp _Skeleton/src/lib.h $Project_Name/$Project_Name/lib.h
 		cp _Skeleton/Sandbox/main.c $Project_Name/Sandbox/main.c
 		cp _Skeleton/premake5.lua $Project_Name/premake5.lua
-		cp _Skeleton/src/premake5.lua $Project_Name/src/premake5.lua
+		cp _Skeleton/src/premake5.lua $Project_Name/$Project_Name/premake5.lua
 	
 	elif [[ $Project_Kind == "ConsoleApp" ]]; then
 		Project_Name_Exe=$Project_Name
-		Project_Path_Exe=src
+		Project_Path_Exe=$Project_Name
 
-		cp _Skeleton/src/main.c $Project_Name/src/main.c
+		cp _Skeleton/src/main.c $Project_Name/$Project_Name/main.c
 		head _Skeleton/premake5.lua -n 17 > $Project_Name/premake5.lua
 
 	fi
