@@ -16,7 +16,7 @@ else
 	
 	cp _Skeleton/build.sh $Project_Name/build.sh
 	cp _Skeleton/test.sh $Project_Name/test.sh
-	cp _Skeleton/.gitignore $Project_Name/.gitignore
+	cp _Skeleton/._gitignore $Project_Name/.gitignore
 
 	if [[ $Project_Kind == "StaticLib" ]]; then
 		Project_Name_Exe=Sandbox
