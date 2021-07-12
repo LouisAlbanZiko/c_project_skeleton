@@ -1,5 +1,5 @@
-#ifndef _LIB_H_
-#define _LIB_H_
+#ifndef _${Project_Name_Lib}_H_
+#define _${Project_Name_Lib}_H_
 
 #include <stdlib.h>
 #include <stdint.h>

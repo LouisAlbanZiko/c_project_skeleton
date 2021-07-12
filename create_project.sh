@@ -26,8 +26,9 @@ else
 
 		mkdir -p "${Project_Name}/${Project_Name_Exe}"
 
-		cp _Skeleton/src/lib.c $Project_Name/$Project_Name/lib.c
-		cp _Skeleton/src/lib.h $Project_Name/$Project_Name/lib.h
+		cp _Skeleton/src/lib.c $Project_Name/$Project_Name/${Project_Name_Lib}.c
+		cp _Skeleton/src/lib.h $Project_Name/$Project_Name/${Project_Name_Lib}.h
+		cp _Skeleton/src/internal.h $Project_Name/$Project_Name/internal.h
 		cp _Skeleton/Sandbox/main.c $Project_Name/Sandbox/main.c
 		cp _Skeleton/premake5.lua $Project_Name/premake5.lua
 		cp _Skeleton/src/premake5.lua $Project_Name/$Project_Name/premake5.lua
