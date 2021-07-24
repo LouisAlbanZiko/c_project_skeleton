@@ -1,4 +1,4 @@
-#include "${Project_Name_Lib}.h"
+#include "internal.h"
 
 void print_hello_world()
 {
