@@ -1,6 +1,7 @@
 #!/bin/bash
 [ -f Makefile ] || _premake/premake5 gmake
 if [[ $1 == "all" ]]; then
+	_premake/premake5 gmake
 	make all
 elif [ -z $1 ]; then
 	if [ -d $1 ] && [[ ! $1 == _* ]]; then
