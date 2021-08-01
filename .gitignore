@@ -3,6 +3,6 @@
 
 # except
 !.gitignore
-!create_project.sh
-!clone_project.sh
-!_Skeleton/
+!*.sh
+!_Skeleton_ConsoleApp/
+!_Skeleton_StaticLib/
