@@ -31,6 +31,6 @@ else
 
 	replace_variables_in_files $project_name
 
-	echo -e "include \"${project_name}\"\n" >> project_list.lua
+	echo -e "include \"${project_name}\"" >> project_list.lua
 
 fi
