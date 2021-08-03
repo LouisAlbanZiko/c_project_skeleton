@@ -1,3 +1,3 @@
 #!/bin/bash
 [ -f Makefile ] || _premake/premake5 gmake
-make clean
+rm -rf _bin/* _bin_obj/*
