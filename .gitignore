@@ -6,3 +6,6 @@
 !*.sh
 !_Skeleton_ConsoleApp/
 !_Skeleton_StaticLib/
+!premake5.lua
+!README.md
+!LICENSE
