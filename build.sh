@@ -1,4 +1,5 @@
 #!/bin/bash
+_premake/premake5 gmake
 [ -f Makefile ] || _premake/premake5 gmake
 if [[ $1 == "all" ]]; then
 	_premake/premake5 gmake
