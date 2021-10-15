@@ -3,5 +3,5 @@ project "${project_name}"
 	kind "${project_type}"
 	language "C"
 	
-	files { "**.c" }
+	files { "**.c", "**.h" }
 	includedirs { "../_vendor", "../", "." }
