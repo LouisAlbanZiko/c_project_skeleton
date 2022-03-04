@@ -5,3 +5,7 @@ project "${project_name}"
 	
 	files { "**.c", "**.h" }
 	includedirs { "../_vendor", "../", "." }
+
+	filter "system:linux"
+		links { "m" }
+		buildoptions "-g"
